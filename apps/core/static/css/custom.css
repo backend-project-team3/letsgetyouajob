@@ -25,3 +25,13 @@
 #project-logo{
     height: 250px
 }
+
+/* for search_results.html */
+.list-group-item {
+	padding-right: 50px;
+}
+
+.mb-1 {
+	font-weight: bold;
+}
+
