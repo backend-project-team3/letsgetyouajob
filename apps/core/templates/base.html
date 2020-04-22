@@ -30,6 +30,14 @@
 
 <body>
 
+{% block additional_styles %}
+<style>
+        body {
+            background-image: url(./static/images/golden_gate_bridge.jpg);
+        }
+</style>
+{% endblock %}
+
 <nav class="navbar navbar-expand-md">
     <div class="container">
         <a class="navbar-brand" href="/">
@@ -44,7 +52,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <!-- <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'home' %}">Start</a>
                 </li>
@@ -54,7 +62,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'view_all_users' %}">Users</a>
                 </li>
-            </ul>
+            </ul> -->
             <ul class="navbar-nav ml-auto">
                 {% if request.user.is_authenticated %}
                     <li class="nav-item">
