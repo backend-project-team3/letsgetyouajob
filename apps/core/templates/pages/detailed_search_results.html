@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Detailed Search Results
+{% endblock title %}
+
+{% block additional_styles %}
+<style>
+    body {
+        background-color: white;
+    }
+</style>
+{% endblock %}
+
+
+{% block content %}
+<div id="home-content" class="container">
+  <div class="row">
+
+      <div class="col-lg-3"></div> <!-- Column for spacing -->
+
+      <div class="col-lg-6">
+          <div class="mt-5 mb-3 text-center">
+            <h1>Let's Get a Job!</h1>
+          </div>
+
+<!-- Start -->
+  
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Software Engineer</h5>
+<!--       <small class="text-muted">2 days ago</small> -->
+
+      <button type="button" class="btn btn-link">Save</button>
+      <button type="button" class="btn btn-link">Apply</button>
+    </div>
+    <p class="mb-3">Must have a degree in computer science.</p>
+    <small class="text-muted">San Francisco, CA</small>
+  </a>
+
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Web Developer Intern</h5>
+<!--       <small class="text-muted">3 days ago</small> -->
+      <button type="button" class="btn btn-link">Save</button>
+      <button type="button" class="btn btn-link">Apply</button>
+    </div>
+    <p class="mb-3">Must be willing to work for free</p>
+    <small class="text-muted">Fremont, CA</small>
+  </a> 
+
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Project Manager</h5>
+<!--       <small class="text-muted">3 days ago</small> -->
+      <button type="button" class="btn btn-link">Save</button>
+      <button type="button" class="btn btn-link">Apply</button>
+    </div>
+    <p class="mb-3">Must have 3+ references</p>
+    <small class="text-muted">San Jose, CA</small>
+  </a>
+</div>
+
+<!-- End -->
+
+      </div>
+  </div>
+</div>
+
+
+
+{% endblock content %}

@@ -15,3 +15,20 @@ def about(request):
 
     return render(request, 'pages/about.html', context)
 
+def search_results(request):
+    context = {
+    }
+
+    return render(request, 'pages/search_results.html', context)
+
+def detailed_search_results(request):
+    context = {
+    }
+
+    return render(request, 'pages/detailed_search_results.html', context)
+
+def saved_jobs(request):
+    context = {
+    }
+
+    return render(request, 'pages/saved_jobs.html', context)
