@@ -41,9 +41,15 @@ def search_results(request):
 
     return render(request, 'pages/search_results.html', context)
 
-def detailed_search_results(request):
-    context = {
-    }
+def detailed_search_results(request, job_id):
+   
+    url = f'https://jobs.github.com/positions/{job_id}.json'
+ 
+    response = requests.get(url)
+    results_data = response.json()
+
+
+    context = {'job': results_data}
 
     return render(request, 'pages/detailed_search_results.html', context)
 

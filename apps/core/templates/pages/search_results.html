@@ -38,7 +38,7 @@
 <p>You Searched for: {{search_term}}</p>
 {% for job in job_results %}
 <div class="list-group">
-  <a href="{{job.url}}" class="list-group-item list-group-item-action flex-column align-items-start">
+  <a href="/detailed_search_results/{{job.id}}/" class="list-group-item list-group-item-action flex-column align-items-start">
     <div class="d-flex w-100 justify-content-between">
       <h5 class="mb-1">{{job.title}}</h5>
     </div>
