@@ -7,10 +7,15 @@
 {% block additional_styles %}
 <style>
     body {
-        background-color: white;
+        background-image: url('/static/images/bay-bridge.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
     }
 </style>
 {% endblock %}
+
 
 
 {% block content %}
@@ -21,7 +26,7 @@
 
       <div class="col-lg-6">
           <div class="mt-5 mb-3 text-center">
-            <h1>Search Results</h1>
+            <h1 id='search-results-text'>Search Results</h1>
           </div>
 
 <form method="GET" action="/search-results/">
@@ -35,7 +40,7 @@
 </form>
 
 <!-- 2start -->
-<p>You Searched for: {{search_term}}</p>
+<p id='search-term'>You Searched for: {{search_term}}</p>
 {% for job in job_results %}
 <div class="list-group">
   <a href="/detailed_search_results/{{job.id}}/" class="list-group-item list-group-item-action flex-column align-items-start">
