@@ -6,9 +6,13 @@
 
 {% block additional_styles %}
 <style>
-    body {
-        background-color: white;
-    }
+  body {
+      background-image: url('/static/images/mission-dolores.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+  }
 </style>
 {% endblock %}
 
@@ -25,46 +29,17 @@
           </div>
 
 <!-- Start -->
-  
-<div class="list-group">
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Software Engineer</h5>
-<!--       <small class="text-muted">2 days ago</small> -->
-
-      <button type="button" class="btn btn-link">Save</button>
-      <button type="button" class="btn btn-link">Apply</button>
-    </div>
-    <p class="mb-3">Must have a degree in computer science.</p>
-    <small class="text-muted">San Francisco, CA</small>
-  </a>
-
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Web Developer Intern</h5>
-<!--       <small class="text-muted">3 days ago</small> -->
-      <button type="button" class="btn btn-link">Save</button>
-      <button type="button" class="btn btn-link">Apply</button>
-    </div>
-    <p class="mb-3">Must be willing to work for free</p>
-    <small class="text-muted">Fremont, CA</small>
-  </a> 
-
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Project Manager</h5>
-<!--       <small class="text-muted">3 days ago</small> -->
-      <button type="button" class="btn btn-link">Save</button>
-      <button type="button" class="btn btn-link">Apply</button>
-    </div>
-    <p class="mb-3">Must have 3+ references</p>
-    <small class="text-muted">San Jose, CA</small>
-  </a>
-</div>
-
-<!-- End -->
-
+ 
+  <div class="list-group">
+    <div class="list-group-item list-group-item-action flex-column align-items-start">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">{{job.title}}</h5>
+        <button type="button" class="btn btn-link">Save</button>
+        <button type="button" class="btn btn-link">Apply</button>
       </div>
+      <p class="mb-3">{{job.description|safe}}</p>
+      </div>
+    </a>
   </div>
 </div>
 

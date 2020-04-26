@@ -4,7 +4,7 @@
     background: #2E1D2C;
 }
 
-.nav-link, .navbar-brand {color: white;
+.nav-link, .navbar-brand, #search-results-text, #search-term{color: white;
 
 }
 
@@ -34,3 +34,4 @@
 .mb-1 {
 	font-weight: bold;
 }
+

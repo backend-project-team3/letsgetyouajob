@@ -26,17 +26,17 @@
     <!-- Add your custom CSS to this file -->
     <link href="{% static 'css/custom.css' %}" rel="stylesheet">
 
-  </head>
+{% block additional_styles %}
+<style>
+     body {background-image: url(./static/images/golden_gate_bridge.jpg);
+}
+</style>
+{% endblock %}
+    
+</head>
 
 <body>
 
-{% block additional_styles %}
-<style>
-        body {
-            background-image: url(./static/images/golden_gate_bridge.jpg);
-        }
-</style>
-{% endblock %}
 
 <nav class="navbar navbar-expand-md">
     <div class="container">
@@ -58,9 +58,6 @@
             <!-- <ul class="navbar-nav mr-auto"> 
                <li class="nav-item">
                     <a class="nav-link" href="{% url 'search_results' %}">Search</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'detailed_search_results' %}">Detailed Search</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'saved_jobs' %}">Saved Jobs</a>
