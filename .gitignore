@@ -133,6 +133,9 @@ typings/
 # Yarn Integrity file
 .yarn-integrity
 
+.vscode/
+**/0001_initial.py
+
 
 ### Linux template
 *~

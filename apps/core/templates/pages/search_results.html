@@ -36,32 +36,38 @@
 
 <!-- 2start -->
 
+ <p>You Searched for: {{search_term}}</p>
+{% for job in job_results %}
 <div class="list-group">
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+  <a href="/detailed_search_results/{{job.id}}/" class="list-group-item list-group-item-action flex-column align-items-start">
     <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Software Engineer</h5>
-      <small class="text-muted">2 days ago</small>
+      <h5 class="mb-1">{{job.title}}</h5>
     </div>
-    <p class="mb-3">Must have a degree in computer science.</p>
-    <small class="text-muted">San Francisco, CA</small>
-  </a>
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Web Developer Intern</h5>
-      <small class="text-muted">3 days ago</small>
+    <div>
+      <small class="text-muted">{{job.location}}</small>
     </div>
-    <p class="mb-3">Must be willing to work for free</p>
-    <small class="text-muted">Fremont, CA</small>
   </a> 
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Full-stack software engineer intern</h5>
-      <small class="text-muted">3 days ago</small>
-    </div>
-    <p class="mb-3">Must be a junior currently enrolled in a university</p>
-    <small class="text-muted">San Jose, CA</small>
-  </a>
 </div>
+<br>
+{% endfor %} 
+
+
+<!-- <div class="row">
+  {% for result in job_results %}
+      <div class="col-md-4">
+          <div class="card shadow text-center mb-5">
+              <div class="card-body">
+                  <h4 class="card-title">{{ result.title }}</h4>
+                  <p class="card-text">by {{ result.description }}</p>
+                  {% if result.company %}
+                      <p><strong>Posting Company:</strong> {{result.company }}<br />
+                  {% endif %}
+              </div>
+
+      </div>
+  </div>
+  {% endfor %}
+</div> -->
 
 <!-- End -->
       </div>
