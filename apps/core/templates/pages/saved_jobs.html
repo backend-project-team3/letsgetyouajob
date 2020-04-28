@@ -27,6 +27,7 @@
 <form method="GET" action="/search-results/">
   <div class="input-group mb-2">
     <input name="searchterm" type="text" class="form-control form-control-lg" placeholder="Let's get you a job..." />
+    <input name="searchlocation" type="text" class="form-control form-control-lg" placeholder="Let's find a job..." />
     <div class="input-group-append">
       <button class="btn btn-primary btn-lg">Search</button></a>
   </div>
@@ -36,37 +37,20 @@
 
 <!-- 2start -->
 
+{% for job in saved_jobs %}
 <div class="list-group">
-    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+  <a href="/detailed_search_results/{{jjob.job_id}}/" class="list-group-item list-group-item-action flex-column align-items-start">
     <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Saved Job(s)</h5>
+      <h5 class="mb-1">{{job.job_title}}</h5>
     </div>
-  </a>
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-">Software Engineer</h5>
-      <small><button type="button" class="btn btn-link">Apply</button></small>
+    <div>
+      <small class="text-muted">{% if job.applied == True %} Applied {% endif %}</small>
+      <small class="text-muted">{% if job.applied == False %} Saved {% endif %}</small>
     </div>
-    <p class="mb-3">Must have a degree in computer science.</p>
-    <small class="text-muted">San Francisco, CA</small>
-  </a>
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Web Developer Intern</h5>
-      <small><button type="button" class="btn btn-link">Apply</button></small>
-    </div>
-    <p class="mb-3">Must be willing to work for free</p>
-    <small class="text-muted">Fremont, CA</small>
   </a> 
-  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-    <div class="d-flex w-100 justify-content-between">
-      <h5 class="mb-1">Full-stack software engineer intern</h5>
-      <small><button type="button" class="btn btn-link">Apply</button></small>
-    </div>
-    <p class="mb-3">Must be a junior currently enrolled in a university</p>
-    <small class="text-muted">San Jose, CA</small>
-  </a>
 </div>
+<br>
+{% endfor %} 
 
 <!-- End -->
       </div>

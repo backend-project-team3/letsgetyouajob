@@ -7,15 +7,10 @@
 {% block additional_styles %}
 <style>
     body {
-        background-image: url('/static/images/bay-bridge.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-attachment: fixed;
+        background-color: white;
     }
 </style>
 {% endblock %}
-
 
 
 {% block content %}
@@ -26,7 +21,7 @@
 
       <div class="col-lg-6">
           <div class="mt-5 mb-3 text-center">
-            <h1 id='search-results-text'>Search Results</h1>
+            <h1>Search Results</h1>
           </div>
 
 <form method="GET" action="/search-results/">
@@ -40,7 +35,8 @@
 </form>
 
 <!-- 2start -->
-<p id='search-term'>You Searched for: {{search_term}}</p>
+
+ <p>You Searched for: {{search_term}}</p>
 {% for job in job_results %}
 <div class="list-group">
   <a href="/detailed_search_results/{{job.id}}/" class="list-group-item list-group-item-action flex-column align-items-start">
@@ -53,7 +49,29 @@
   </a> 
 </div>
 <br>
-{% endfor %}
+{% endfor %} 
+
+
+<!-- <div class="row">
+  {% for result in job_results %}
+      <div class="col-md-4">
+          <div class="card shadow text-center mb-5">
+              <div class="card-body">
+                  <h4 class="card-title">{{ result.title }}</h4>
+                  <p class="card-text">by {{ result.description }}</p>
+                  {% if result.company %}
+                      <p><strong>Posting Company:</strong> {{result.company }}<br />
+                  {% endif %}
+              </div>
+
+      </div>
+  </div>
+  {% endfor %}
+</div> -->
+
 <!-- End -->
+      </div>
+  </div>
+</div>
 
 {% endblock content %}
