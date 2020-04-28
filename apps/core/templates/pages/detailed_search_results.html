@@ -31,7 +31,7 @@
     <div class="d-flex w-100 justify-content-between">
       <h5 class="mb-1">{{job.title}}</h5>
       <a href="/save_job/{{job.id}}/lwamng/" class="btn btn-primary">Save</a>
-      <a class="btn btn-success">Apply</a>
+      <a href="{{job.company_url}}" class="btn btn-success">Apply</a>
     </div>
     <p class="mb-3">{{job.description|safe}}</p>
     </div>
