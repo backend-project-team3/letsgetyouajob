@@ -71,7 +71,7 @@ def detailed_search_results(request,job_id):
 
 
 def saved_jobs(request,user_name):
-    s_jobs = Saved_Job.objects.get(username=user_name).order_by('-created')
+    s_jobs = Saved_Job.objects.filter(username=user_name).order_by('-created')
 
     context = {
             'saved_jobs' : s_jobs
