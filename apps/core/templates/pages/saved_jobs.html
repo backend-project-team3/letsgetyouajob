@@ -21,7 +21,7 @@
 
       <div class="col-lg-6">
           <div class="mt-5 mb-3 text-center">
-            <h1>Welcome [name]</h1>
+            <h1>Welcome {{user.username}}</h1>
           </div>
 
 <form method="GET" action="/search-results/">
@@ -39,7 +39,7 @@
 
 {% for job in saved_jobs %}
 <div class="list-group">
-  <a href="/detailed_search_results/{{jjob.job_id}}/" class="list-group-item list-group-item-action flex-column align-items-start">
+  <a href="/detailed_search_results/{{job.job_id}}/" class="list-group-item list-group-item-action flex-column align-items-start">
     <div class="d-flex w-100 justify-content-between">
       <h5 class="mb-1">{{job.job_title}}</h5>
     </div>
