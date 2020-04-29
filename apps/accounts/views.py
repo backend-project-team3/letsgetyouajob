@@ -7,6 +7,7 @@ from django.contrib.auth.decorators import login_required
 
 from apps.accounts.forms import UserEditForm, SignupForm
 from apps.accounts.models import User
+from apps.core.models import Saved_Job
 
 def log_in(request):
     if request.method == 'POST':
@@ -59,6 +60,7 @@ def view_all_users(request):
 
 
 def view_profile(request, username):
+    s_jobs = Saved_Job.objects.filter(username=username).order_by('-created')
     user = User.objects.get(username=username)
 
     if request.user == user:
@@ -69,6 +71,7 @@ def view_profile(request, username):
     context = {
         'user': user,
         'is_viewing_self': is_viewing_self,
+        'saved_jobs': s_jobs
     }
     return render(request, 'accounts/profile_page.html', context)
 

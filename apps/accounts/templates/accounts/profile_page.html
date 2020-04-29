@@ -19,7 +19,20 @@
     </div>
 
     <div class="col-md-9">
-        stuff could go here...
+       {% for job in saved_jobs %}
+		<div class="list-group">
+		  <a href="/detailed_search_results/{{job.job_id}}/" class="list-group-item list-group-item-action flex-column align-items-start">
+		    <div class="d-flex w-100 justify-content-between">
+		      <h5 class="mb-1">{{job.job_title}}</h5>
+		    </div>
+		    <div>
+		      <small class="text-muted">{% if job.applied == True %} Applied {% endif %}</small>
+		      <small class="text-muted">{% if job.applied == False %} Saved {% endif %}</small>
+		    </div>
+		  </a> 
+		</div>
+		<br>
+		{% endfor %} 
     </div>
 </div>
 {% endblock %}
