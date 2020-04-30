@@ -4,6 +4,18 @@
     @{{ user.username }}
 {% endblock title %}
 
+{% block additional_styles %}
+<style>
+  body {
+        background-image: url('/static/images/lanterns.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+</style>
+{% endblock %}
+
 {% block content %}
 <div class="row">
     <div class="col-md-3">
