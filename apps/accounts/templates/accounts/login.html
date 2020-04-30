@@ -1,6 +1,18 @@
 {% extends 'base.html' %}
 {% load bootstrap4 %}
 
+{% block additional_styles %}
+<style>
+  body {
+        background-image: url('/static/images/tower.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+</style>
+{% endblock %}
+
 {% block content %}
 
 {% include "accounts/form_snippet.html" with form_title="Log In" %}
