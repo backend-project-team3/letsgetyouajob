@@ -23,20 +23,20 @@ This is a project for the coding bootcamp [Kickstart Coding](http://kickstartcod
     * Log-in and sign-up pages
     * User profile page
 
-![Log In](./apps/core/static/images/login-screenshot1.png)
-![Sign Up](./apps/core/static/images/signup-page-screenshot1.png)
-![User profile page](./apps/core/static/images/user-profile-page-screenshot1.png)
+![Log In](./apps/core/static/images/login-screenshot1.jpg)
+![Sign Up](./apps/core/static/images/signup-page-screenshot1.jpg)
+![User profile page](./apps/core/static/images/user-profile-page-screenshot1.jpg)
 
 * Search Results:
     * All users have access to search results 
     * Search results display position name and location
 
-![Search Results Page](./apps/core/static/images/search-results-screenshot1.png)
+![Search Results Page](./apps/core/static/images/search-results-screenshot1.jpg)
 
 * Detailed search results
     * Upon clicking a search result, the full job description is displayed 
 
-![Detailed Search Results Page](./apps/core/static/images/detailedsearchresultspage.png)
+![Detailed Search Results Page](./apps/core/static/images/detailed-search-results-whenloggedin1.png)
 
 * Bookmark
     * Registered users may choose to save the position on their accounts 
