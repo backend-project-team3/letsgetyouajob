@@ -17,21 +17,21 @@ This is a project for the coding bootcamp [Kickstart Coding](http://kickstartcod
     * Users can easily begin by using the search bar on the home page
     * Users may use the search bar, log in, or sign up for a free account
 
-![Home Page](./apps/core/static/images/homepage.png)
+![Home Page](./apps/core/static/images/homepage-screenshot.jpg)
 
 * Accounts:
     * Log-in and sign-up pages
     * User profile page
 
-![Log In](./apps/core/static/images/login-screenshot.png)
-![Sign Up](./apps/core/static/images/signup-page-screenshot.png)
-![User profile page](./apps/core/static/images/user-profile-page-screenshot.png)
+![Log In](./apps/core/static/images/login-screenshot1.png)
+![Sign Up](./apps/core/static/images/signup-page-screenshot1.png)
+![User profile page](./apps/core/static/images/user-profile-page-screenshot1.png)
 
 * Search Results:
     * All users have access to search results 
     * Search results display position name and location
 
-![Search Results Page](./apps/core/static/images/search-results-screenshot.png)
+![Search Results Page](./apps/core/static/images/search-results-screenshot1.png)
 
 * Detailed search results
     * Upon clicking a search result, the full job description is displayed 
