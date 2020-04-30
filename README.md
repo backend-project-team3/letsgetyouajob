@@ -36,12 +36,12 @@ This is a project for the coding bootcamp [Kickstart Coding](http://kickstartcod
 * Detailed search results
     * Upon clicking a search result, the full job description is displayed 
 
-![Detailed Search Results Page](./apps/core/static/images/detailed-search-results-whenloggedin1.png)
+![Detailed Search Results Page](./apps/core/static/images/detailed-search-results-whenloggedin1.jpg)
 
 * Bookmark
     * Registered users may choose to save the position on their accounts 
 
-![Bookmark Page](./apps/core/static/images/saved-jobs-results-screenshot.png)
+![Bookmark Page](./apps/core/static/images/saved-jobs-results-screenshot1.jpg)
 
 * Apply
     * Registered users may apply for the position (they will be sent to the official job listing's website and may apply there)
