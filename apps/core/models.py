@@ -8,7 +8,7 @@ class Saved_Job(models.Model):
     job_id = models.CharField(max_length=50)
     applied = models.BooleanField(default=False)
     job_title = models.CharField(max_length=50)
-    job_description = models.CharField(max_length=200)
+    job_description = models.TextField()
 
 
 def __str__(self):
