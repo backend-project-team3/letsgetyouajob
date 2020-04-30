@@ -1,2 +1,2 @@
-web: gunicorn wsgi --log-file -
+web: gunicorn wsgi --log-level debug --log-file -
 
