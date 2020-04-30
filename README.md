@@ -17,7 +17,7 @@ This is a project for the coding bootcamp [Kickstart Coding](http://kickstartcod
     * Users can easily begin by using the search bar on the home page
     * Users may use the search bar, log in, or sign up for a free account
 
-![Home Page](./apps/core/static/images/homepage.png)
+![Home Page](./apps/core/static/images/homepage.xcf)
 
 * Accounts:
     * Log-in and sign-up pages
@@ -31,7 +31,7 @@ This is a project for the coding bootcamp [Kickstart Coding](http://kickstartcod
     * All users have access to search results 
     * Search results display position name and location
 
-![PLACEHOLDER Search Results Page](.apps/core/static/images/searchresultspage.png)
+![PLACEHOLDER Search Results Page](./apps/core/static/images/searchresultspage.png)
 
 * Detailed search results
     * Upon clicking a search result, the full job description is displayed 
