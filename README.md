@@ -1,6 +1,6 @@
 # Let's Get You a Job
 
-This project intends to minimize the time needed for users to find, save, and apply for tech jobs in the San Francisco Bay Area, California, USA.
+This project intends to minimize the time needed for users to find, save, and apply for tech jobs in the United States.
 
 ## About
 
@@ -17,13 +17,15 @@ This is a project for the coding bootcamp [Kickstart Coding](http://kickstartcod
     * Users can easily begin by using the search bar on the home page
     * Users may use the search bar, log in, or sign up for a free account
 
-![PLACEHOLDER Home Page](.apps/core/static/images/homepage.png)
+![Home Page](./apps/core/static/images/homepage.png)
 
 * Accounts:
     * Log-in and sign-up pages
     * User profile page
 
-![PLACEHOLDER](.apps/core/static/images/placeholder.png)
+![Log In](./apps/core/static/images/placeholder.png)
+![Sign Up](./apps/core/static/images/placeholder.png)
+![User profile page](./apps/core/static/images/user-profile-page-screenshot-scaled.xcf)
 
 * Search Results:
     * All users have access to search results 
@@ -34,17 +36,17 @@ This is a project for the coding bootcamp [Kickstart Coding](http://kickstartcod
 * Detailed search results
     * Upon clicking a search result, the full job description is displayed 
 
-![PLACEHOLDER Detailed Search Results Page](.apps/core/static/images/detailedsearchresultspage.png)
+![PLACEHOLDER Detailed Search Results Page](./apps/core/static/images/detailedsearchresultspage.png)
 
 * Bookmark
     * Registered users may choose to save the position on their accounts 
 
-![PLACEHOLDER Bookmark Page](.apps/core/static/images/placeholder.png)
+![PLACEHOLDER Bookmark Page](./apps/core/static/images/placeholder.png)
 
 * Apply
     * Registered users may apply for the position (they will be sent to the official job listing's website and may apply there)
 
-![PLACEHOLDER Apply Page](.apps/core/static/images/placeholder.png)
+![PLACEHOLDER Apply Page](./apps/core/static/images/placeholder.png)
 
 ### Running locally
 
@@ -62,8 +64,10 @@ git clone https://github.com/backend-project-team3/letsgetyouajob #Git clone rep
 2. Please go into the newly created project and ensure that you are "next to" `manage.py`. Then please use `pipenv` to set up your virtualenv: 
 ```
 pipenv shell
-pipenv install django
+pipenv install django 
 pipenv install --dev
+python manage.py makemigrations
+python manage.py migrate
 python manage.py runserver
 ```
 
