@@ -17,36 +17,34 @@ This is a project for the coding bootcamp [Kickstart Coding](http://kickstartcod
     * Users can easily begin by using the search bar on the home page
     * Users may use the search bar, log in, or sign up for a free account
 
-![Home Page](./apps/core/static/images/homepage.xcf)
+![Home Page](./apps/core/static/images/homepage.png)
 
 * Accounts:
     * Log-in and sign-up pages
     * User profile page
 
-![Log In](./apps/core/static/images/placeholder.png)
-![Sign Up](./apps/core/static/images/placeholder.png)
-![User profile page](./apps/core/static/images/user-profile-page-screenshot-scaled.xcf)
+![Log In](./apps/core/static/images/login-screenshot.png)
+![Sign Up](./apps/core/static/images/signup-page-screenshot.png)
+![User profile page](./apps/core/static/images/user-profile-page-screenshot.png)
 
 * Search Results:
     * All users have access to search results 
     * Search results display position name and location
 
-![PLACEHOLDER Search Results Page](./apps/core/static/images/searchresultspage.png)
+![Search Results Page](./apps/core/static/images/search-results-screenshot.png)
 
 * Detailed search results
     * Upon clicking a search result, the full job description is displayed 
 
-![PLACEHOLDER Detailed Search Results Page](./apps/core/static/images/detailedsearchresultspage.png)
+![Detailed Search Results Page](./apps/core/static/images/detailedsearchresultspage.png)
 
 * Bookmark
     * Registered users may choose to save the position on their accounts 
 
-![PLACEHOLDER Bookmark Page](./apps/core/static/images/placeholder.png)
+![Bookmark Page](./apps/core/static/images/saved-jobs-results-screenshot.png)
 
 * Apply
     * Registered users may apply for the position (they will be sent to the official job listing's website and may apply there)
-
-![PLACEHOLDER Apply Page](./apps/core/static/images/placeholder.png)
 
 ### Running locally
 
