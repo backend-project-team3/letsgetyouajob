@@ -86,6 +86,43 @@ def save_job(request, job_id ,user_name):
         job_title=job_data['title'],
         job_description=job_data['description'],
         applied=False,
-        username=user_name
+        username=user_name,
+        company_url=job_data['company_url']
     )
     return redirect("/saved_jobs/" + user_name)
+
+
+def apply_job(request, job_id ,user_name):
+    
+    # U in CRUD
+    saved_job = Saved_Job.objects.filter(job_id=job_id).first()
+    job_url = ""
+    # if job already exists
+    if saved_job is not None:
+        saved_job.applied = True
+        job_url = saved_job.company_url
+        saved_job.save()
+    # if job does not already exist
+    else:
+        job_data = request.session.get(job_id, None)
+        Saved_Job.objects.create(
+            job_id=job_data['id'],
+            job_title=job_data['title'],
+            job_description=job_data['description'],
+            company_url=job_data['company_url'],
+            applied=True,
+            username=user_name
+        )
+        job_url = job_data['company_url']
+    
+    return redirect(job_url)
+    
+
+
+# # U in CRUD
+# job = Saved_Job.objects.get(id=job_id)
+# job.applied = True
+# job.save()
+
+# #return redirect(job_data.company_url)  # Once you add company_url
+# return redirect('/saved_jobs/' + request.user.username)
