@@ -1,6 +1,6 @@
 # Let's Get You a Job
 
-This project intends to minimize the time needed for users to find, save, and apply for tech jobs in the United States.
+This project intends to minimize the time needed for users to find, save, and apply for tech jobs.
 
 ## About
 
