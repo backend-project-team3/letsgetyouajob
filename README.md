@@ -35,8 +35,11 @@ This is a project for the coding bootcamp [Kickstart Coding](http://kickstartcod
 
 * Detailed search results
     * Upon clicking a search result, the full job description is displayed 
+    * Registered users have the option of either saving the job or applying for it
+    * Unregistered users are prompted to "log in to apply" 
 
 ![Detailed Search Results Page](./apps/core/static/images/detailed-search-results-whenloggedin1.jpg)
+![Detailed Search Results Page](./apps/core/static/images/searchresults-unregisteredusers.jpg)
 
 * Bookmark
     * Registered users may choose to save the position on their accounts 
@@ -62,8 +65,8 @@ git clone https://github.com/backend-project-team3/letsgetyouajob #Git clone rep
 2. Please go into the newly created project and ensure that you are "next to" `manage.py`. Then please use `pipenv` to set up your virtualenv: 
 ```
 pipenv shell
-pipenv install django 
-pipenv install --dev
+pipenv install django              # may cause ignorable error
+pipenv install --dev               # may cause ignorable error
 python manage.py makemigrations
 python manage.py migrate
 python manage.py runserver
